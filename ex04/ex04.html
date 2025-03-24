@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        align-items: center;
+      }
+      #form {
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      #form h3 {
+        display: flex;
+        justify-content: center;
+      }
+      #form input {
+        border: 1px solid grey;
+        border-radius: 4px;
+      }
+      #btn-add {
+        background-color: #28a745;
+        border: 1px solid #28a745;
+        color: white;
+        border-radius: 4px;
+      }
+      #btn-add:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      #form table td {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+      }
+      table td button {
+        background-color: red;
+        border: 1px solid red;
+        color: white;
+        border-radius: 4px;
+      }
+      table td button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <h3>Todo List</h3>
+      <input type="text" id="input" placeholder="Thêm việc cần làm" />
+      <button type="submit" id="btn-add">Thêm</button>
+      <table>
+        <tr>
+          <td id="job"><button id="btn-delete">/button></td>
+        </tr>
+      </table>
+    </form>
+    <script src="./ex04.js"></script>
+  </body>
+</html>
