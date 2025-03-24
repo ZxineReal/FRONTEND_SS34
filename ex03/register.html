@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        background-color: #e8e8e8;
+        font-size: 13px;
+      }
+      #form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        color: grey;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        gap: 10px;
+      }
+      #form h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        color: black;
+      }
+      #form input {
+        height: 25px;
+        border: 1px solid grey;
+        border-radius: 4px;
+      }
+      #form button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        height: 25px;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      #form button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <h3>Register</h3>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email address" />
+      
+
+      <label for="password">Password</label> 
+      <input type="password" id="password" placeholder="Enter your password" />
+      
+
+      <label for="confirmPassword">Confirm Password:</label> 
+      <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Enter your confirm password"
+      />
+      <button type="submit" id="btn">Register</button>
+    </form>
+    <script src="./register.js"></script>
+  </body>
+</html>
