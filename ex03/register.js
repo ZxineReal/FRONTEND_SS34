@@ -19,7 +19,7 @@ formElement.addEventListener("submit", function (event) {
     alert("Email đã tồn tại!");
     return;
   }
-  
+
   const passwordValue = passwordElement.value;
   if (!passwordValue) {
     alert("Mật khẩu không được để trống");

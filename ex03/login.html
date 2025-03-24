@@ -16,7 +16,7 @@
         padding: 20px;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 10px;
         width: 20%;
         border-radius: 4px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -25,10 +25,33 @@
         display: flex;
         justify-content: center;
       }
+      #form input {
+        height: 20px;
+        border-radius: 4px;
+        border: 1px solid grey;
+      }
+      #form button {
+        background-color: #007bff;
+        color: white;
+        border: 1px solid #007bff;
+        border-radius: 4px;
+        height: 24px;
+      }
+      #form button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      #signup {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        color: #007bff;
+        font-size: 12px;
+      }
     </style>
   </head>
   <body>
-    <form id="form" action="./home.html">
+    <form id="form" action="./home.html" target="_blank">
       <h3>Login</h3>
       <label for="email">Email:</label>
       <input type="email" id="email" placeholder="Enter your email address" />
@@ -38,8 +61,8 @@
 
       <button id="submit-btn">Login</button>
 
-      <a href="./register.html">SignUp</a>
+      <a id="signup" target="_blank" href="./register.html">SignUp</a>
     </form>
-    <script src="./ex03.js"></script>
+    <script src="./login.js"></script>
   </body>
 </html>
